@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+</head>
+<body>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Conf</title>
+</head>
+
+<body>
+
+ <!-- BACKGROUND IMAGES -->
+  <img
+    src="./assets/images/pattern-squiggly-line-top.svg"
+    alt=""
+    class="top-line"
+  >
+
+  <img
+    src="./assets/images/pattern-squiggly-line-bottom-desktop.svg"
+    alt=""
+    class="bottom-line"
+  >
+
+  <img
+    src="./assets/images/pattern-circle.svg"
+    alt=""
+    class="circle circle-1"
+  >
+
+  <img
+    src="./assets/images/pattern-circle.svg"
+    alt=""
+    class="circle circle-2"
+  >
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+
+      <div class="logo">
+        <img src="./assets/images/logo-mark.svg" alt="">
+        <span>Coding Conf</span>
+      </div>
+
+    </header>
+
+
+
+    <!-- FORM SECTION -->
+    <section class="form-section">
+
+      <div class="hero">
+        <h1>
+          Your Journey to Coding Conf
+          2025 Starts Here!
+        </h1>
+
+        <p>
+          Secure your spot at next year’s biggest coding conference.
+        </p>
+      </div>
+
+
+
+      <!-- FORM -->
+      <form class="ticket-form" autocomplete="off">
+
+        <!-- UPLOAD -->
+        <div class="form-group">
+
+          <label for="avatar">Upload Avatar</label>
+
+          <div class="upload-box">
+
+            <div class="upload-input">
+              <input
+              type="file"
+              id="image-input"
+              >
+
+              <img
+              src="./assets/images/icon-upload.svg"
+              alt="" class="upload-icon"
+              >
+
+              <p>Drag and drop or click to upload</p>
+            </div>
+
+            <div class="preview">
+                <img src="" alt=""  id="preview-img">
+
+                <div class="preview-btns">
+                  <button class="preview-btn" id="remove-btn">
+                  <u>Remove Image</u>
+                  </button>
+
+                  <button class="preview-btn" id="change-btn">
+                    Change Image
+                  </button>
+                </div>
+            </div>
+
+          </div>
+
+          <small class="info">
+            <img src="assets/images/icon-info.svg" alt="">
+            Upload your photo (JPG or PNG, max size: 500KB).
+          </small>
+
+          <span class="error" id="size-error">file too large. Please upload  a photo under 500KB.</span>
+          <span class="error" id="image-error">Please upload  a photo under 500KB.</span>
+
+        </div>
+
+
+
+        <!-- NAME -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+
+          <input type="text" id="name">
+          <span class="error" id="name-error">Please enter your full name</span>
+        </div>
+
+
+
+        <!-- EMAIL -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+
+          <input
+            type="email"
+            pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+            id="email"
+            placeholder="example@email.com"
+          >
+          <span class="error" id="email-error">Please enter a valid email address</span>
+        </div>
+
+
+
+        <!-- GITHUB -->
+        <div class="form-group">
+          <label for="user-name">GitHub Username</label>
+
+          <input
+            type="text"
+            id="user-name"
+            pattern="^@[a-zA-Z0-9_]{3,16}$"
+            title="Username must start with @ and contain 3-16 letters, numbers, or underscores."
+            placeholder="@yourusername"
+          >
+          <span class="error" id="username-error">Please enter your github username</span>
+        </div>
+
+
+
+        <!-- BUTTON -->
+        <button type="submit" class="generate-btn">
+          Generate My Ticket
+        </button>
+
+      </form>
+
+    </section>
+
+
+
+
+
+    <!-- SUCCESS / TICKET SECTION -->
+    <section class="ticket-section">
+
+      <!-- SUCCESS TEXT -->
+      <div class="success-content">
+
+        <h1>
+          Congrats,
+          <span class="highlight-name" id="name-span"></span>!
+          <br>
+          Your ticket is ready.
+        </h1>
+
+        <p>
+          We've emailed your ticket to
+          <span class="highlight-email" id="email-span"></span>
+          and will send updates in the run up to the event.
+        </p>
+
+      </div>
+
+      <!-- TICKET CARD -->
+      <article class="ticket-card">
+
+        <!-- LEFT SIDE -->
+        <div class="ticket-left">
+
+          <!-- TOP -->
+          <div class="ticket-top">
+
+            <div class="logo">
+              <img src="./assets/images/logo-mark.svg" alt="Coding Conf Logo">
+              <span>Coding Conf</span>
+            </div>
+
+            <p>Jan 31, 2025 / Austin, TX</p>
+
+          </div>
+
+          <!-- BOTTOM -->
+          <div class="ticket-user">
+
+            <img
+              src=""
+              alt="User Avatar"
+              class="avatar"
+              id="avatar-img"
+            >
+
+            <div class="user-info">
+              <h3 id="full-name"></h3>
+
+              <div class="github">
+                <img src="./assets/images/icon-github.svg" alt="GitHub Icon">
+                <span id="github-username"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- RIGHT SIDE -->
+        <div class="ticket-right">
+          <p>#01609</p>
+        </div>
+
+      </article>
+
+    </section>
+
+  </main>
+  <script src="/scripts/script.js"></script>
+</body>
+</html>
