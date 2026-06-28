@@ -7,7 +7,7 @@ Over the next 30 days, I’ll be building small projects to sharpen my JavaScrip
 
 ## 📚 What This Repo Contains
 
-- A folder for each day/project with the code and notes  
+- A folder for each day/project with the code  
 - Projects range from beginner to intermediate level  
 - Examples include calculators, to-do lists, games, API fetch apps, and more  
 
