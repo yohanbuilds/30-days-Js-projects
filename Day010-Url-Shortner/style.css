@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(27, 27, 50);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+.container{
+    width: 100%;
+    background-color: rgba(57, 64, 92, 0.411);
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2em;
+    border-radius: 1rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.logo img {
+    width: 35px;
+}
+.input{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input{
+    width: 100%;
+    max-width: 5000px;
+    padding: 1rem;
+    border-radius: .5em;
+    font-size: 1.1rem;
+    color: white;
+    background: transparent;
+    border: 1px solid rgb(77, 77, 250);
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: 2px solid rgb(36, 84, 240);
+}
+#shorten-btn{
+    width: 100%;
+    max-width: 150px;
+    padding: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: rgb(71, 71, 255);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+}
+
+#shorten-btn:hover{
+     background-color: rgb(110, 110, 252);
+}
+
+#shorten-btn:active{
+     background-color: rgb(64, 64, 241);
+}
+
+.result{
+    width: 100%;
+    max-width: 550px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .8rem;
+    padding: 1rem;
+    border: 1px solid rgb(77, 77, 250);
+    background: transparent;
+
+}
+
+#shortenedUrl-link{
+    color: white;
+    font-size: 1.3rem;
+}
+#shortenedUrl-link:hover{
+    color: rgb(36, 84, 240);
+}
+
+#copy-btn{
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+}
+
+#copy-btn img{
+    width: 30px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortner</title>
+    <link rel="shortcut icon" href="assets/link.png" "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/link.png" alt="">
+                <h1>URL Shortener</h1>
+            </div>
+            
+            <div class="input">
+                <input type="text" placeholder="Paste Link Here" id="url-input">
+                <button id="shorten-btn">Shorten</button>
+            </div>
+
+            <div class="result">
+                <a href="" id="shortenedUrl-link" target="_blank"> <!--shortened URL--> </a>
+                <button id="copy-btn">
+                    <img src="assets/copy.png" alt="copy-icon">
+                </button>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
