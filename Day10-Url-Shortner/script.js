@@ -49,7 +49,7 @@ async function renderUi(){
 
             setTimeout(() => {
                 copyBtn.innerHTML = '<img src="assets/copy.png" alt="copy-icon">';
-            }, 200)
+            }, 300)
         })
 
     }
@@ -64,4 +64,8 @@ shortenBtn.addEventListener('click', ()  => {
     if(!urlInput.value) return;
     renderUi();
 })
+
+particlesJS.load("particles-js", "particles.json", function () {
+    console.log("Particles loaded!");
+});
 
